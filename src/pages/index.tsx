@@ -1,3 +1,4 @@
+import Contact from "@src/components/Contact";
 import Main from "@src/components/Main";
 import Head from "next/head";
 
@@ -17,10 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
-      {/* <About />
-      <Skills />
-      <Projects />
-      <Contact /> */}
+      <Contact />
     </>
   );
 }

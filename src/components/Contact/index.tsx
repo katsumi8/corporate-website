@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import ContactPT from "./Presenter";
 
 function Contact() {
-  return (
-    <div>Contact</div>
-  )
+  return <ContactPT />;
 }
 
-export default Contact
+export default Contact;

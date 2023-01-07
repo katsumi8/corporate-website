@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { BackGroundColor } from "./state";
+import { BackGroundColor, InputValues, Validations } from "./state";
 
 interface NavbarCommon {
   CompanyLogoImg: StaticImageData;
@@ -20,3 +20,15 @@ export interface MobileUiProps extends NavbarCommon {
   nav: boolean;
   setNav: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+export type FormPTprops = {
+  values: InputValues;
+  formErrors: Validations;
+  handleChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
+  handleFocus: (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement, Element>
+  ) => void;
+  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => Promise<void>;
+};
