@@ -32,3 +32,9 @@ export type FormPTprops = {
   ) => void;
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => Promise<void>;
 };
+
+export type ServiceCategoryProps = {
+  title: string;
+  backgroundImg: StaticImageData;
+  projectUrl: string;
+};

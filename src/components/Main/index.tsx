@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import MainPT from "./Presenter";
 
 function Main() {
-  return (
-    <div>Main</div>
-  )
+  return <MainPT />;
 }
 
-export default Main
+export default Main;

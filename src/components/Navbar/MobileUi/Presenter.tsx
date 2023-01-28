@@ -6,13 +6,7 @@ import { AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-
-function MobileUiPT({
-  CompanyLogoImg,
-  handleNav,
-  nav,
-  setNav,
-}: MobileUiProps) {
+function MobileUiPT({ CompanyLogoImg, handleNav, nav, setNav }: MobileUiProps) {
   return (
     <div
       className={
@@ -28,8 +22,9 @@ function MobileUiPT({
       >
         <div>
           <div className="flex items-center justify-between w-full">
-            <Link href={"/"}>
+            <Link href={"/"} className="flex items-center">
               <Image src={CompanyLogoImg} alt="/" width="87" height="35" />
+              <div className="text-4xl text-red-900 uppercase">Degiya</div>
             </Link>
             <div
               onClick={handleNav}
@@ -51,24 +46,19 @@ function MobileUiPT({
                 Home
               </li>
             </Link>
+            <Link href="/#services">
+              <li onClick={() => setNav(false)} className="py-4 text-sm">
+                Our services
+              </li>
+            </Link>
             <Link href="/#about">
               <li onClick={() => setNav(false)} className="py-4 text-sm">
                 About
               </li>
             </Link>
-            <Link href="/#skills">
-              <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Skills
-              </li>
-            </Link>
-            <Link href="/#projects">
-              <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Projects
-              </li>
-            </Link>
             <Link href="/#contact">
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Contact
+                Contact us
               </li>
             </Link>
           </ul>
