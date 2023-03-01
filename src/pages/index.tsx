@@ -1,8 +1,8 @@
 import Contact from "@src/components/Contact";
+import Footer from "@src/components/Footer";
 import Main from "@src/components/Main";
 import OurService from "@src/components/OurService";
 import Head from "next/head";
-
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <Main />
       <OurService />
       <Contact />
+      <Footer />
     </>
   );
 }

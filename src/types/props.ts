@@ -4,6 +4,8 @@ import { BackGroundColor, InputValues, Validations } from "./state";
 interface NavbarCommon {
   CompanyLogoImg: StaticImageData;
   handleNav: () => void;
+  companyName: string;
+  navLinkObjects: { name: string; href: string }[];
 }
 
 export interface NavbarPTprops extends MobileUiProps, LaptopUiProps {

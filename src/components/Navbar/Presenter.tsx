@@ -12,6 +12,13 @@ function NavbarPT({
   nav,
   setNav,
 }: NavbarPTprops) {
+  const navLinkObjects: { name: string; href: string }[] = [
+    { name: "Home", href: "/" },
+    { name: "Our services", href: "/#services" },
+    { name: "Contact us", href: "/#contact" },
+  ];
+  const companyName = "Dejiya";
+
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
@@ -25,12 +32,16 @@ function NavbarPT({
         CompanyLogoImg={CompanyLogoImg}
         handleNav={handleNav}
         linkColor={linkColor}
+        companyName={companyName}
+        navLinkObjects={navLinkObjects}
       />
       <MobileUi
         CompanyLogoImg={CompanyLogoImg}
         handleNav={handleNav}
         nav={nav}
         setNav={setNav}
+        companyName={companyName}
+        navLinkObjects={navLinkObjects}
       />
     </div>
   );
