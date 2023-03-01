@@ -10,6 +10,12 @@ function Navbar() {
   const [navBg, setNavBg] = useState<BackGroundColor>("#ecf0f3");
   const [linkColor, setLinkColor] = useState<BackGroundColor>("#1f2937");
   const router = useRouter();
+  const companyName = "Dejiya";
+  const navLinkObjects: { name: string; href: string }[] = [
+    { name: "Home", href: "/" },
+    { name: "Our services", href: "/#services" },
+    { name: "Contact us", href: "/#contact" },
+  ];
 
   useEffect(() => {
     if (
@@ -50,6 +56,8 @@ function Navbar() {
       nav={nav}
       setNav={setNav}
       CompanyLogoImg={CompanyLogoImg}
+      companyName={companyName}
+      navLinkObjects={navLinkObjects}
     />
   );
 }

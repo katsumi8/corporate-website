@@ -11,14 +11,9 @@ function NavbarPT({
   handleNav,
   nav,
   setNav,
+  companyName,
+  navLinkObjects,
 }: NavbarPTprops) {
-  const navLinkObjects: { name: string; href: string }[] = [
-    { name: "Home", href: "/" },
-    { name: "Our services", href: "/#services" },
-    { name: "Contact us", href: "/#contact" },
-  ];
-  const companyName = "Dejiya";
-
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
